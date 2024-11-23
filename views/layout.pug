@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title} | MoodCast
+    link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header#header 
+      .header-content   
+        h2#site-name 
+          a(href="/") MoodCast
+    main#main.container
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Vishnu Hari, 2024

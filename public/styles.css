@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a, footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+/* Container for Main Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Titles */
+h1.page-title {
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2.page-subtitle {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #3498db;
+}
+
+/* Forms */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.form-container input,
+.form-container select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-container button {
+  padding: 12px 18px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Weather Result */
+#weather-result {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#weather-result img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+#weather-result p {
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+
+/* Music Playlist */
+#music-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#playlist {
+  width: 100%;
+  max-width: 800px;
+}
+
+#playlist-info {
+  text-align: center;
+}
+
+#playlist-info h2 {
+  font-size: 1.8em;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+#playlist-info p {
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+  font-size: 1em;
+  color: #ecf0f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1.page-title {
+    font-size: 2.5em;
+  }
+
+  h2.page-subtitle {
+    font-size: 1.4em;
+  }
+
+  .form-container {
+    margin: 10px 0;
+  }
+
+  .form-container input,
+  .form-container select {
+    padding: 10px;
+  }
+
+  .form-container button {
+    padding: 10px 14px;
+  }
+}

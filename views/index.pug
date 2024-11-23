@@ -1,0 +1,18 @@
+extends layout 
+
+block main-content 
+  h1.page-title Welcome to MoodCast
+  h2.page-subtitle We suggest songs that match the vibe of your climate
+  // Form for city input
+  div.form-container
+    form(action="/weather" method="GET" id="weather-form" onsubmit="return validateCityInput();")
+      label(for="city") Enter the city name you want to vibe
+      input#city(type="text" name="city" placeholder="e.g. Toronto" required)
+      button(type="submit") Get playlist
+  
+  
+  div 
+    h2.page-subtitle Good songs have a way of finding us at just the right time, turning ordinary moments into memories.
+    
+
+  

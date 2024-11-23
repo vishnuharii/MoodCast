@@ -1,0 +1,20 @@
+extends layout
+
+block main-content
+  h1.page-title Live weather for #{weather.location.name}
+  div#weather-result
+    img(src=`${weather.current.condition.icon}` alt="Weather Icon")
+    p Temperature: #{weather.current.temp_c} °C
+    p Humidity: #{weather.current.humidity} %
+    p #{weather.current.condition.text}
+  h1.page-title Playlist matches the current weather
+  div#music-flex
+    div#playlist
+      iframe(style="border-radius: 12px", src=`https://open.spotify.com/embed/playlist/${music.id}?utm_source=generator`, width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
+    div#playlist-info
+      h2 #{music.name}
+      p #{music.description} 
+      p Play it 
+        a(href=`${music.external_urls.spotify}` target="_blank") on your Spotify
+  div#back
+    a(href="/")  Home
